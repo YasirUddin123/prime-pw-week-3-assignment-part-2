@@ -10,6 +10,8 @@ for (let i=0; i<4; i++) {
   console.log(i);
 }
 
+// make sure index is initialized at 0
+
 // 1.a. TODO: Write a for loop to console.log the numbers from 0 to 5
 //   - Which part of the example loop do you need to change to do this?
 console.log('count from 0 to 5');
@@ -18,6 +20,8 @@ for(let i = 0; i < 6; i++){
   console.log(i);
 }
 
+//make sure condition is less than 6, not 5
+
 // 1.b. TODO: Write a for loop to console.log the numbers from 3 to 5
 //   - Which part of the example loop do you need to change to do this?
 console.log('count from 3 to 5');
@@ -25,6 +29,8 @@ console.log('count from 3 to 5');
 for(let i = 3; i < 6; i++){
   console.log(i);
 }
+
+// make sure index is initialized to 3
 
 // 1.c. TODO: Write a for loop to console.log EVEN numbers from 2 to 10
 //   - Which part of the example loop do you need to change to do this?
@@ -35,13 +41,15 @@ for(let i = 2; i < 11; i+=2){
 }
 
 // Referenced Stackoverflow --> https://stackoverflow.com/questions/12809776/can-a-for-loop-increment-decrement-by-more-than-one
-
+// make sure index is initialized to 2
 
 // 1.d. (STRETCH) TODO: Write a for loop to do a counddown from 5 to 0
 console.log('STRETCH: countdown from 5 to 0');
 for(let i = 5; i > -1; i--){
   console.log(i);
 }
+
+// make sure condition is greater than -1
 
 // 2. For of loops
 console.log('---- 2. For Of loop ----');
@@ -52,6 +60,8 @@ console.log('Some stars:');
 for(star of stars){
   console.log(star);
 }
+
+// make sure not to confuse star with stars
 
 
 // 3. While loops
@@ -65,6 +75,9 @@ while(i < stars.length){
   i++;
 }
 
+// initialize i = 0 before and outside of the while loop
+
+
 // 3.b. TODO: Write a while loop to console.log the numbers from 0 to 5
 console.log('count from 0 to 5');
 let j = 0;
@@ -73,6 +86,8 @@ while(j < 6){
   j++;
 }
 
+// found that it works to use initialize with a letter other than 'i'
+
 // 3.c. TODO: Write a while loop to console.log the numbers from 10 to 5
 console.log('count backwards from 10 to 5');
 let k = 10;
@@ -80,3 +95,5 @@ while (k > 4){
   console.log(k);
   k--;
 }
+
+// make sure the count decrements by one with '--'
